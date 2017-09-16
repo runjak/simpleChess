@@ -1,5 +1,4 @@
 // @flow
-
-export function square(x: number): number {
-  return x*x;
+export default function square(x: number): number {
+  return x * x;
 }

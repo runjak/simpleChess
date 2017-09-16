@@ -12,11 +12,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src",
+    "precommit": "yarn run lint && yarn run flow"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.2.1",
     "flow-bin": "^0.52.0"
   }
 }
