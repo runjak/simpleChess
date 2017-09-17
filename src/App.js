@@ -1,17 +1,20 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Chessboard from './components/Chessboard';
 
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+`;
+
 export default function App() {
   return (
-    <div className="App">
-      <div className="App-header">
-        <h2>Welcome to React</h2>
-      </div>
-      <p className="App-intro">
-        To get started, edit <code>src/App.js</code> and save to reload.
-      </p>
+    <Wrapper>
       <Chessboard />
-    </div>
+    </Wrapper>
   );
 }
