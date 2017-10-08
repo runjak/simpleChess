@@ -4,6 +4,7 @@ import {
   columnToIndex,
   indexToColumn,
   getColor,
+  fieldName,
 } from './Field';
 
 const columnRowCorrespondence = {
@@ -60,5 +61,13 @@ describe('getColor()', () => {
     const actual = getColor('h', 1);
 
     expect(actual).toEqual('white');
+  });
+});
+
+describe('fieldName()', () => {
+  it('should compose the fieldName according to algebraic chess notation', () => {
+    const actual = fieldName('g', 5);
+
+    expect(actual).toEqual('g5');
   });
 });

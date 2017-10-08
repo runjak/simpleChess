@@ -26,3 +26,7 @@ export function getColor(column: Column, row: Row): Color {
 
   return parity ? 'white' : 'black';
 }
+
+export function fieldName(column: Column, row: Row): string {
+  return `${column}${row}`;
+}
