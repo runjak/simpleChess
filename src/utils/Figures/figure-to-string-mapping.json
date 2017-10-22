@@ -1,0 +1,18 @@
+{
+  "white": {
+    "King": "♔",
+    "Queen": "♕",
+    "Rook": "♖",
+    "Bishop": "♗",
+    "Knight": "♘",
+    "Pawn": "♙"
+  },
+  "black": {
+    "King": "♚",
+    "Queen": "♛",
+    "Rook": "♜",
+    "Bishop": "♝",
+    "Knight": "♞",
+    "Pawn": "♟"
+  }
+}
