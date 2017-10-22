@@ -1,0 +1,132 @@
+{
+  "fields": {
+    "a8": {
+      "color": "black",
+      "piece": "Rook"
+    },
+    "b8": {
+      "color": "black",
+      "piece": "Knight"
+    },
+    "c8": {
+      "color": "black",
+      "piece": "Bishop"
+    },
+    "d8": {
+      "color": "black",
+      "piece": "Queen"
+    },
+    "e8": {
+      "color": "black",
+      "piece": "King"
+    },
+    "f8": {
+      "color": "black",
+      "piece": "Bishop"
+    },
+    "g8": {
+      "color": "black",
+      "piece": "Knight"
+    },
+    "h8": {
+      "color": "black",
+      "piece": "Rook"
+    },
+    "a7": {
+      "color": "black",
+      "piece": "Pawn"
+    },
+    "b7": {
+      "color": "black",
+      "piece": "Pawn"
+    },
+    "c7": {
+      "color": "black",
+      "piece": "Pawn"
+    },
+    "d7": {
+      "color": "black",
+      "piece": "Pawn"
+    },
+    "e7": {
+      "color": "black",
+      "piece": "Pawn"
+    },
+    "f7": {
+      "color": "black",
+      "piece": "Pawn"
+    },
+    "g7": {
+      "color": "black",
+      "piece": "Pawn"
+    },
+    "h7": {
+      "color": "black",
+      "piece": "Pawn"
+    },
+    "a2": {
+      "color": "white",
+      "piece": "Pawn"
+    },
+    "b2": {
+      "color": "white",
+      "piece": "Pawn"
+    },
+    "c2": {
+      "color": "white",
+      "piece": "Pawn"
+    },
+    "d2": {
+      "color": "white",
+      "piece": "Pawn"
+    },
+    "e2": {
+      "color": "white",
+      "piece": "Pawn"
+    },
+    "f2": {
+      "color": "white",
+      "piece": "Pawn"
+    },
+    "g2": {
+      "color": "white",
+      "piece": "Pawn"
+    },
+    "h2": {
+      "color": "white",
+      "piece": "Pawn"
+    },
+    "a1": {
+      "color": "white",
+      "piece": "Rook"
+    },
+    "b1": {
+      "color": "white",
+      "piece": "Knight"
+    },
+    "c1": {
+      "color": "white",
+      "piece": "Bishop"
+    },
+    "d1": {
+      "color": "white",
+      "piece": "Queen"
+    },
+    "e1": {
+      "color": "white",
+      "piece": "King"
+    },
+    "f1": {
+      "color": "white",
+      "piece": "Bishop"
+    },
+    "g1": {
+      "color": "white",
+      "piece": "Knight"
+    },
+    "h1": {
+      "color": "white",
+      "piece": "Rook"
+    }
+  }
+}
