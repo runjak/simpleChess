@@ -1,8 +1,10 @@
 // @flow
 import React from 'react';
+// $FlowFixMe - flow doesn't know styled-components
 import styled, { css } from 'styled-components';
 
-import type { Column, Row, Color } from '../utils/Field';
+import type { Color } from '../utils/Colors';
+import type { Column, Row } from '../utils/Field';
 
 import { getColor, columnToIndex } from '../utils/Field';
 

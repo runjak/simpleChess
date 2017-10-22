@@ -1,7 +1,5 @@
 // @flow
-import type {
-  Color,
-} from '../utils/Field';
+import type { Color } from '../utils/Colors';
 
 import defaultBoard from './defaultBoard.json';
 

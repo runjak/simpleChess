@@ -1,9 +1,9 @@
 // @flow
-import type {
-  Color,
-  Position,
-} from '../utils/Field';
+import type { Color } from '../utils/Colors';
+import type { Position } from '../utils/Field';
 import type { PlayerActions } from '../actions/player';
+
+import { oppositeColor } from '../utils/Colors';
 
 export type PlayerState = {
   currentTurn: Color,
@@ -36,7 +36,7 @@ function selectTargetField(state: PlayerState): PlayerState {
   return {
     ...state,
     selectedField: null,
-    currentTurn: (currentTurn === 'white') ? 'black' : 'white',
+    currentTurn: oppositeColor(currentTurn),
   };
 }
 
