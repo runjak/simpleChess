@@ -10,3 +10,16 @@ export function oppositeColor(color: Color): Color {
 
   return 'white';
 }
+
+export function toCssColor(color: Color): string {
+  switch (color) {
+    case 'white':
+      return '#ffffff';
+
+    case 'black':
+      return '#000000';
+
+    default:
+      return '#ff00ff';
+  }
+}

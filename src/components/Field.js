@@ -7,6 +7,7 @@ import type { Color } from '../utils/colors';
 import type { Column, Row } from '../utils/field';
 
 import { getColor, columnToIndex } from '../utils/field';
+import { oppositeColor, toCssColor } from '../utils/colors';
 
 type Props = {
   column: Column,
@@ -29,8 +30,8 @@ const StyledDiv = styled.div`
       grid-column-end: ${x};
       grid-row-start: ${8 - y};
       grid-row-end: ${(8 - y) + 1};
-      background-color: ${color === 'white' ? '#fff' : '#000'};
-      color: ${color === 'white' ? '#000' : '#fff'};
+      background-color: ${toCssColor(color)};
+      color: ${toCssColor(oppositeColor(color))};
     `;
   }}
   `;
