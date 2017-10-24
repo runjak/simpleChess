@@ -1,7 +1,7 @@
 // @flow
 
 import type { Action } from './';
-import type { Position } from '../utils/Field';
+import type { Position } from '../utils/field';
 
 export type SelectFigureAction = Action<Position> & {
   type: 'SELECT_FIGURE',

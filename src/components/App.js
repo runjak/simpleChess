@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Chessboard from './components/Chessboard';
+import Chessboard from './Chessboard';
 
 const Wrapper = styled.div`
   display: flex;

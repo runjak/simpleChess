@@ -5,7 +5,7 @@ import {
   indexToColumn,
   getColor,
   fieldName,
-} from './Field';
+} from './field';
 
 const columnRowCorrespondence = {
   a: 1,

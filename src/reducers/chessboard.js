@@ -1,7 +1,7 @@
 // @flow
-import type { Color } from '../utils/Colors';
+import type { Color } from '../utils/colors';
 
-import defaultBoard from './defaultBoard.json';
+import defaultBoard from './default-board.json';
 
 export type Piece =
   'King' |

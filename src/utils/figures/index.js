@@ -1,6 +1,6 @@
 // @flow
 
-import type { Color } from '../Colors';
+import type { Color } from '../colors';
 
 import figureToStringMapping from './figure-to-string-mapping.json';
 

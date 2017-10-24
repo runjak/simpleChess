@@ -3,10 +3,10 @@ import React from 'react';
 // $FlowFixMe - flow doesn't know styled-components
 import styled, { css } from 'styled-components';
 
-import type { Color } from '../utils/Colors';
-import type { Column, Row } from '../utils/Field';
+import type { Color } from '../utils/colors';
+import type { Column, Row } from '../utils/field';
 
-import { getColor, columnToIndex } from '../utils/Field';
+import { getColor, columnToIndex } from '../utils/field';
 
 type Props = {
   column: Column,

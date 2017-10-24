@@ -1,4 +1,4 @@
-import { oppositeColor } from './Colors';
+import { oppositeColor } from './colors';
 
 describe('oppositeColor()', () => {
   it('should switch black to white', () => {

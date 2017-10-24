@@ -1,9 +1,9 @@
 // @flow
-import type { Color } from '../utils/Colors';
-import type { Position } from '../utils/Field';
+import type { Color } from '../utils/colors';
+import type { Position } from '../utils/field';
 import type { PlayerActions } from '../actions/player';
 
-import { oppositeColor } from '../utils/Colors';
+import { oppositeColor } from '../utils/colors';
 
 export type PlayerState = {
   currentTurn: Color,

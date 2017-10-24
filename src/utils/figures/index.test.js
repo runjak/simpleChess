@@ -2,7 +2,7 @@ import figureToStringMapping from './figure-to-string-mapping.json';
 
 import { pieces, toString } from './';
 
-describe('Figures util', () => {
+describe('figures util', () => {
   describe('toString', () => {
     it('should lookup from the table correctly', () => {
       const colors = ['black', 'white'];

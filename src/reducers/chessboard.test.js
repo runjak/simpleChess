@@ -1,4 +1,4 @@
-import defaultBoard from './defaultBoard.json';
+import defaultBoard from './default-board.json';
 import reduce from './chessboard';
 
 describe('chessboard reducer', () => {

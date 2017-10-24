@@ -3,9 +3,9 @@ import React from 'react';
 // $FlowFixMe - flow doesn't know styled-components
 import styled from 'styled-components';
 
-import type { Column, Row } from '../utils/Field';
+import type { Column, Row } from '../utils/field';
 
-import { columns, rows } from '../utils/Field';
+import { columns, rows } from '../utils/field';
 import Field from './Field';
 
 const Board = styled.div`
