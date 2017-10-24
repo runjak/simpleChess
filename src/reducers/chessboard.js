@@ -1,20 +1,8 @@
 // @flow
-import type { Color } from '../utils/colors';
+
+import type { Figure } from '../utils/figures';
 
 import defaultBoard from './default-board.json';
-
-export type Piece =
-  'King' |
-  'Queen' |
-  'Rook' |
-  'Bishop' |
-  'Knight' |
-  'Pawn';
-
-export type Figure = {
-  piece: Piece,
-  color: Color,
-};
 
 export type ChessBoard = {
   fields: {
