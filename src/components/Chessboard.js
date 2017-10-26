@@ -1,12 +1,15 @@
 // @flow
-import React from 'react';
+import React, { Element } from 'react';
 // $FlowFixMe - flow doesn't know styled-components
 import styled from 'styled-components';
 
 import type { Column, Row } from '../utils/field';
 
 import { columns, rows } from '../utils/field';
-import Field from './Field';
+
+export type Props = {
+  renderField: (row: Row, column: Column) => Element<any>,
+};
 
 const Board = styled.div`
   display: grid;
@@ -17,17 +20,17 @@ const Board = styled.div`
   border: 1px solid black;
 `;
 
-function Chessboard() {
+function Chessboard(props: Props) {
+  const { renderField } = props;
+
   return (
     <Board>
       {
-        rows.map((row: Row) => (
-          columns.map((column: Column) => (
-            <Field row={row} column={column}>
-              {`${row}:${column}`}
-            </Field>
-          ))
-        ))
+        rows.map(
+          (row: Row) => columns.map(
+            (column: Column) => renderField(row, column),
+          ),
+        )
       }
     </Board>
   );

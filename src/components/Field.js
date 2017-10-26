@@ -9,7 +9,7 @@ import type { Column, Row } from '../utils/field';
 import { getColor, columnToIndex } from '../utils/field';
 import { oppositeColor, toCssColor } from '../utils/colors';
 
-type Props = {
+export type Props = {
   column: Column,
   row: Row,
   children: Element,
