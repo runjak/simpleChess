@@ -7,7 +7,7 @@ import { positionToFieldName } from '../utils/field';
 
 import defaultBoard from './default-board.json';
 
-type Fields = { [fieldName: string]: Figure };
+export type Fields = { [fieldName: string]: Figure };
 
 export type ChessBoard = {
   fields: Fields,
