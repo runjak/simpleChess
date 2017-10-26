@@ -34,3 +34,9 @@ export function getColor(column: Column, row: Row): Color {
 export function fieldName(column: Column, row: Row): string {
   return `${column}${row}`;
 }
+
+export function positionToFieldName(position: Position): string {
+  const { column, row } = position;
+
+  return fieldName(column, row);
+}

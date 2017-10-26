@@ -5,6 +5,7 @@ import {
   indexToColumn,
   getColor,
   fieldName,
+  positionToFieldName,
 } from './field';
 
 const columnRowCorrespondence = {
@@ -69,5 +70,16 @@ describe('fieldName()', () => {
     const actual = fieldName('g', 5);
 
     expect(actual).toEqual('g5');
+  });
+});
+
+describe('positionToFieldName()', () => {
+  it('should compose the fieldName for a position correctly', () => {
+    const actual = positionToFieldName({
+      column: 'foo',
+      row: 'bar',
+    });
+
+    expect(actual).toEqual('foobar');
   });
 });
