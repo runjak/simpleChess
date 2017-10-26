@@ -6,7 +6,8 @@ import styled from 'styled-components';
 import type { Column, Row } from '../utils/field';
 
 import Chessboard from '../components/Chessboard';
-import Field from '../components/Field';
+import Field from './Field';
+import { fieldName } from '../utils/field';
 
 const Wrapper = styled.div`
   display: flex;
@@ -21,7 +22,7 @@ export default function App() {
     <Wrapper>
       <Chessboard
         renderField={(row: Row, column: Column) => (
-          <Field row={row} column={column}>
+          <Field row={row} column={column} key={fieldName(column, row)}>
             {`${row}${column}`}
           </Field>
         )}

@@ -23,5 +23,6 @@ module.exports = {
       describe: false,
       it: false,
       document: false,
+      window: false,
     }
 };
