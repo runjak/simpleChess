@@ -42,3 +42,20 @@ export function positionToFieldName(position: Position): string {
 
   return fieldName(column, row);
 }
+
+export function isValidMove(fields: Fields, sourceField: string, targetField: string): boolean {
+  const sourceFigure = fields[sourceField];
+  const targetFigure = fields[targetField];
+
+  if (!sourceFigure) {
+    return false;
+  }
+
+  if (targetFigure) {
+    if (targetFigure.color === sourceFigure.color) {
+      return false;
+    }
+  }
+
+  return true;
+}

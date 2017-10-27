@@ -2,7 +2,7 @@
 import type { Fields } from '../utils/field';
 import type { ChessboardActions, MoveFigurePayload } from '../actions/chessboard';
 
-import { positionToFieldName } from '../utils/field';
+import { positionToFieldName, isValidMove } from '../utils/field';
 
 import defaultBoard from './default-board.json';
 
@@ -17,20 +17,11 @@ function moveFigure(state: ChessBoard, payload: MoveFigurePayload): ChessBoard {
   const sourceField = positionToFieldName(sourcePosition);
   const targetField = positionToFieldName(targetPosition);
 
-  const sourceFigure = fields[sourceField];
-  const targetFigure = fields[targetField];
-
-  if (!sourceFigure) {
+  if (!isValidMove(fields, sourceField, targetField)) {
     return state;
   }
 
-  if (targetFigure) {
-    if (targetFigure.color === sourceFigure.color) {
-      return state;
-    }
-  }
-
-  const { [sourceField]: fieldToRemove, ...untouchedFields } = fields;
+  const { [sourceField]: sourceFigure, ...untouchedFields } = fields;
 
   return {
     fields: {
