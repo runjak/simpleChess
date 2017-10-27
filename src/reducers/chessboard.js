@@ -1,13 +1,10 @@
 // @flow
-
-import type { Figure } from '../utils/figures';
+import type { Fields } from '../utils/field';
 import type { ChessboardActions, MoveFigurePayload } from '../actions/chessboard';
 
 import { positionToFieldName } from '../utils/field';
 
 import defaultBoard from './default-board.json';
-
-export type Fields = { [fieldName: string]: Figure };
 
 export type ChessBoard = {
   fields: Fields,

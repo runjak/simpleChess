@@ -1,4 +1,5 @@
 // @flow
+import type { Figure } from './figures';
 import type { Color } from './colors';
 
 export type Column = 'a' | 'b' | 'c' | 'd' | 'e' | 'f' | 'g' | 'h';
@@ -8,6 +9,7 @@ export type Position = {
   column: Column,
   row: Row,
 };
+export type Fields = { [fieldName: string]: Figure };
 
 export const columns: Array<Column> = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 export const rows: Array<Row> = [1, 2, 3, 4, 5, 6, 7, 8];

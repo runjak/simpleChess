@@ -3,8 +3,8 @@
 import { createSelector } from 'reselect';
 
 import type { State } from '../reducers';
-import type { ChessBoard, Fields } from '../reducers/chessboard';
-import type { Position } from '../utils/field';
+import type { ChessBoard } from '../reducers/chessboard';
+import type { Position, Fields } from '../utils/field';
 import type { Figure } from '../utils/figures';
 
 import { positionToFieldName } from '../utils/field';
