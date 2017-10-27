@@ -13,6 +13,7 @@ export type Props = {
   column: Column,
   row: Row,
   children: Element,
+  onClick?: () => void,
 };
 
 type StyledProps = {
@@ -21,7 +22,12 @@ type StyledProps = {
   color: Color,
 };
 
-const StyledDiv = styled.div`
+const StyledButton = styled.button`
+  border: none;
+  font-size: xx-large;
+  width: calc(85vh / 8);
+  height: calc(85vh / 8);
+
   ${(props: StyledProps) => {
     const { x, y, color } = props;
 
@@ -37,16 +43,17 @@ const StyledDiv = styled.div`
   `;
 
 export default function Field(props: Props) {
-  const { column, row, children } = props;
+  const { column, row, children, onClick } = props;
   const color = getColor(column, row);
 
   return (
-    <StyledDiv
+    <StyledButton
       x={columnToIndex(column)}
       y={row}
       color={color}
+      onClick={onClick}
     >
       {children}
-    </StyledDiv>
+    </StyledButton>
   );
 }

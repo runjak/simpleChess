@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React, { Component } from 'react';
 // $FlowFixMe - flow doesn't know react-redux
 import { connect } from 'react-redux';
 
@@ -26,14 +26,23 @@ const createMapStateToProps = (initialState: State, props: Props) => {
   });
 };
 
-function Field(props: Props) {
-  const { row, column, figure } = props;
+class Field extends Component {
+  props: Props;
 
-  return (
-    <FieldComponent row={row} column={column}>
-      { figure && figureToString(figure) }
-    </FieldComponent>
-  );
+  handleClick = () => {
+    // eslint-disable-next-line no-alert
+    window.alert('TEST?');
+  };
+
+  render() {
+    const { row, column, figure } = this.props;
+
+    return (
+      <FieldComponent row={row} column={column} onClick={this.handleClick}>
+        { figure && figureToString(figure) }
+      </FieldComponent>
+    );
+  }
 }
 
 export default connect(createMapStateToProps)(Field);
