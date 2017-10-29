@@ -10,9 +10,9 @@ import App from './containers/App';
 
 const store = createStore(
   combineReducer,
-  applyMiddleware(thunk),
   // eslint-disable-next-line no-underscore-dangle
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+  applyMiddleware(thunk),
 );
 
 render(

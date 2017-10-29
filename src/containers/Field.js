@@ -2,10 +2,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import type { Column, Row } from '../utils/field';
+import type { Column, Row, Position } from '../utils/field';
 import type { Figure } from '../utils/figures';
 import type { State } from '../reducers';
 
+import { clickField as clickFieldAction } from '../actions/player';
 import FieldComponent from '../components/Field';
 import { createFigureSelector } from '../selectors/chessboard';
 import { toString as figureToString } from '../utils/figures';
@@ -14,6 +15,7 @@ type Props = {
   row: Row,
   column: Column,
   figure?: ?Figure,
+  clickField?: (position: Position) => void,
 };
 
 const createMapStateToProps = (initialState: State, props: Props) => {
@@ -25,12 +27,19 @@ const createMapStateToProps = (initialState: State, props: Props) => {
   });
 };
 
+const mapDispatchToProps = {
+  clickField: clickFieldAction,
+};
+
 class Field extends Component {
   props: Props;
 
   handleClick = () => {
-    // eslint-disable-next-line no-alert
-    window.alert('TEST?');
+    const { row, column, clickField } = this.props;
+
+    if (clickField) {
+      clickField({ column, row });
+    }
   };
 
   render() {
@@ -44,4 +53,4 @@ class Field extends Component {
   }
 }
 
-export default connect(createMapStateToProps)(Field);
+export default connect(createMapStateToProps, mapDispatchToProps)(Field);
