@@ -1,6 +1,5 @@
 // @flow
 import React, { Component } from 'react';
-// $FlowFixMe - flow doesn't know react-redux
 import { connect } from 'react-redux';
 
 import type { Column, Row } from '../utils/field';

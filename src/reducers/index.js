@@ -1,5 +1,4 @@
 // @flow
-// $FlowFixMe - flow doesn't know redux
 import { combineReducers } from 'redux';
 
 import type { PlayerState } from './players';

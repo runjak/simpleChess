@@ -1,5 +1,4 @@
 // @flow
-// $FlowFixMe - flow doesn't know reselect
 import { createSelector } from 'reselect';
 
 import type { State } from '../reducers';
