@@ -1,0 +1,21 @@
+{
+  "players": {
+    "currentTurn": "black"
+  },
+  "chessboard": {
+    "fields": {
+      "a1": {
+        "piece": "King",
+        "color": "black"
+      },
+      "b2": {
+        "piece": "Queen",
+        "color": "white"
+      },
+      "c3": {
+        "piece": "Rook",
+        "color": "black"
+      }
+    }
+  }
+}
